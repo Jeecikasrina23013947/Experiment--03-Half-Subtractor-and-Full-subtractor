@@ -40,9 +40,9 @@ RegisterNumber: 23013947
 
 
 ## CODE:
-```
-### PROGRAM FOR HALF SUBTRACTOR:
 
+### PROGRAM FOR HALF SUBTRACTOR:
+```
 module halfsub(a,b,difference,borrow);
 input a,b;
 output difference,borrow;

@@ -35,20 +35,61 @@ Write the detailed procedure here
 ## Program:
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-
-## Output:
-
-## Truthtable
+Developed by: JEECIKASRINA M
+RegisterNumber: 23013947 
 
 
+## CODE:
+```
+### PROGRAM FOR HALF SUBTRACTOR:
 
-##  RTL realization
+module halfsub(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference = (a^b);
+assign borrow = (~a&b);
+endmodule
+```
+### PROGRAM FOR FULL SUBTRACTOR:
+```
+module fullsub(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference = (a^b);
+assign borrow = (~a&b);
+endmodule
+```
 
+## truth table:
 
-## Timing diagram 
+HALF SUBTRACTOR:
+
+![image](https://github.com/Jeecikasrina23013947/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/148515300/a2cf1add-90a0-4e0a-9006-aa816f8352cf)
+
+FULL ADDER SUBTRACTOR:
+
+![image](https://github.com/Jeecikasrina23013947/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/148515300/9e09473e-3546-4b6e-9e6e-36047dc92800)
+
+## RTL VIEW:
+
+HALF ADDER RTL VIEW:
+
+![image](https://github.com/Jeecikasrina23013947/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/148515300/3481650a-fef3-4b7e-ad80-0c03e28fcb89)
+
+FULL ADDER SUBTRACTOR:
+
+![image](https://github.com/Jeecikasrina23013947/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/148515300/18da9a14-bb38-45e9-82e6-c7829736d585)
+
+## TIMING DIAGRAM:
+
+HALF ADDER:
+
+![image](https://github.com/Jeecikasrina23013947/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/148515300/4193f2d9-41ed-4d8e-8bd5-6fec33327525)
+
+FULL ADDER :
+
+![image](https://github.com/Jeecikasrina23013947/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/148515300/0be57a44-5c97-4103-98a6-59cbc7095b9d)
+
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
